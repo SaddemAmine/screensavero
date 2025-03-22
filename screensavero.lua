@@ -7,8 +7,10 @@
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
-function SMODS.INIT.screensavero()
-    G.debug_UI_toggle = true
+function Controller.key_press_update(self, key, dt)
+    if key == "f1" then
+        G.debug_UI_toggle = not G.debug_UI_toggle
+    end
 end
 
 ----------------------------------------------
